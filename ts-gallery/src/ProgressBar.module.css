@@ -1,0 +1,6 @@
+.progress_bar {
+	display: flex;
+	align-self: flex-end;
+	height: 1rem;
+	background-color: #000;
+}
