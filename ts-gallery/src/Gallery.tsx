@@ -27,7 +27,7 @@ interface GalleryProps {
 	setActiveImageIdxForProgressBar: (idx: number) => void
 }
 
-const Image: React.FC = ({ imgSource, isActive }: IImageProps) => {
+const Image: React.FC<IImageProps> = ({ imgSource, isActive }) => {
 	const imageClass = cn(styles.image, {
 		[styles.active]: isActive,
 	})
@@ -113,7 +113,6 @@ export const Gallery: React.FC<GalleryProps> = ({
 			<ImagesContainer>
 				{Array.isArray(images) && images.length > 0 && renderImages(images)}
 			</ImagesContainer>
-			<ImagesContainer></ImagesContainer>
 			<Button right onClick={handleClickNextImage} />
 		</div>
 	)
