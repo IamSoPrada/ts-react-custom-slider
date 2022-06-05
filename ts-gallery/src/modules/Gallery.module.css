@@ -7,7 +7,7 @@
 	display: flex;
 	margin: 0 10px;
 	justify-content: space-between;
-	overflow: none;
+	overflow: hidden;
 	height: 100%;
 	max-height: 600px;
 	max-width: 600px;
