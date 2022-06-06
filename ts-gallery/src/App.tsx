@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Gallery } from './modules/Gallery'
 import styles from './App.module.css'
 

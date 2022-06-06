@@ -21,6 +21,6 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
 		setMaxWidth(calculatedMaxWidth)
 	}, [activeImageIdx])
 	return (
-		<div className={progressBarClass} style={{ width: `${maxWidth}px` }}></div>
+		<div className={progressBarClass} style={{ width: `${maxWidth}px` }}/>
 	)
 }

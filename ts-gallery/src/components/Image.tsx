@@ -5,14 +5,16 @@ import styles from "../modules/Gallery.module.css";
 export interface IImage {
     imgSource?: string
     id?: string
-    url?: string
+    download_url?: string
+    author?: string
+    text?: string
 }
 
 interface IImageProps extends IImage {
     isActive?: boolean
 }
 
-export const Image: React.FC<IImageProps> = ({ imgSource, isActive }) => {
+export const Image = ({ imgSource, isActive } : IImageProps) => {
     const imageClass = cn(styles.image, {
         [styles.active]: isActive,
     })

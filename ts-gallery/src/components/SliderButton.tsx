@@ -8,7 +8,7 @@ interface ButtonProps {
     onClick?: () => void
 }
 
-export const SliderButton: React.FC<ButtonProps> = ({ left, right, onClick }) => {
+export const SliderButton = ({ left, right, onClick } : ButtonProps) => {
     const btnClass = cn(styles.btn, {
         [styles.btnRight]: right,
         [styles.btnLeft]: left,
