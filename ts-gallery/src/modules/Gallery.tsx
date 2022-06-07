@@ -15,7 +15,7 @@ interface GalleryProps {
 
 export const Gallery = () => {
 	const [images, setImages] = useState<IImage[] | null>(null)
-	const [quotes, setQuotes] = useState<IImage[] | null>(null)
+	const [quotes, setQuotes] = useState<IQuote[] | null>(null)
 
 	const LAST_IMAGE_IDX =
 		Array.isArray(images) && images.length > 0 && images.length - 1
@@ -50,7 +50,7 @@ export const Gallery = () => {
 		}
 	}
 
-	const getQuotes = async (): Promise<IImage[]> => {
+	const getQuotes = async (): Promise<IQuote[]> => {
 		try{
 			const options = {
 				method: 'GET',
